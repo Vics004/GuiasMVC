@@ -16,7 +16,7 @@ namespace PracticaMVC.Models
         public string contrasenia { get; set; }
         public string tipo_usuario { get; set; }
         public string bloqueado { get; set; } 
-        public DateTime? ultimo_login { get; set; }
+        public DateTime ultimo_login { get; set; }
         public string activo { get; set; }
     }
 }
