@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using PracticaMVC.Models;
+using PracticaMVC.Servicios;
 
 namespace PracticaMVC.Controllers
 {
@@ -17,6 +18,8 @@ namespace PracticaMVC.Controllers
         {
             _context = context;
         }
+
+        [Autenticacion]
 
         // GET: marcas
         public async Task<IActionResult> Index()
