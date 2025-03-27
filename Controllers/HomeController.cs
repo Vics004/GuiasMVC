@@ -74,6 +74,8 @@ namespace PracticaMVC.Controllers
             return RedirectToAction("Index");
         }
 
+        [Autenticacion]
+
         public IActionResult Privacy()
         {
             return View();

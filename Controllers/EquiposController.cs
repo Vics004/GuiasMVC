@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using PracticaMVC.Models;
+using PracticaMVC.Servicios;
 
 
 
@@ -14,6 +15,8 @@ namespace PracticaMVC.Controllers
         {
             _equiposDbContext = equiposDbContext;
         }
+
+        [Autenticacion]
 
         public IActionResult Index()
         {
